@@ -1,14 +1,12 @@
-# meu.starter.ionic-v3
+# meu.starter.blank.ionic-v3
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![Travis CI badge](https://travis-ci.org/meumobi/meu-starter.ionic-v3.svg?branch=master)](https://travis-ci.org/)
+[![Travis CI badge](https://travis-ci.org/meumobi/meu-starter.blank.ionic-v3.svg?branch=master)](https://travis-ci.org/)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/meumobi/meu-starter.ionic-v3.svg)](https://greenkeeper.io/)
 
 ## Introduction
 
-A starter template for PWA and Native Ionic v3 projects, providing best pratices out-of-box: unit testing, environment variables, automatic documentation, automatic deployment, shared module, etc.
-
-## Worflow & build management
+A starter template for PWA and Native Ionic v3 projects, providing worflow & build management best pratices out-of-box:
 
 - [x] [Aliases and environment variables support](#aliases-and-environment-variables-support)
 - [x] [Documentation generation using Compodoc](#documentation-generation-using-compodoc)
@@ -28,122 +26,21 @@ A starter template for PWA and Native Ionic v3 projects, providing best pratices
   - [Ionic blog: Ionic and Lazy Loading Pt 1](https://blog.ionicframework.com/ionic-and-lazy-loading-pt-1/)
   - [Ionic blog: Ionic and Lazy Loading Pt 2](https://blog.ionicframework.com/ionic-and-lazy-loading-pt-2/)
 
-## Technical features
-- PWA
-  - [Optimising the performance of an Ionic PWA - Part 1](https://robferguson.org/blog/2018/04/16/0ptimising-the-performance-of-an-ionic-pwa-part-1/)
-- Live Updates
-  - [Continuous Deployment & Live Updates with Ionic Deploy](https://www.youtube.com/watch?v=I7PC3O4q1ug)
-- Firebase hosting for PWA
-- Custom SplashScreen and Icon
-  - [Custom Ionic Splash + Animation](https://www.youtube.com/watch?v=dPUmskG_-y0)
-- Optimize image handling
-  - Cache images for offline use
-  - Lazy load images
-    - load images only when they appear in the browser’s viewport
-    - Use thumbs
-- Theming App
-  - [meumobi: Theming your Ionic App](http://meumobi.github.io/ionic/2017/08/17/theming-ionic-app.html)
-- Master/Detail pattern
-  - [meumobi: Implementing the Master-Detail Pattern in Ionic](http://meumobi.github.io/ionic/2017/08/23/implementing-master-detail-ionic.html)
-- REST API integration
-  - [Ionic blog: 10 Minutes with Ionic 2: Calling an API](https://blog.ionicframework.com/10-minutes-with-ionic-2-calling-an-api/)
-  - Generate data provider and mockup
-    - [Implementing the Master-Detail Pattern in Ionic]()
-- CRUD with Firestore
-  - [Jave Bratt: Building a CRUD Ionic application with Firestore](https://javebratt.com/crud-ionic-firestore/)
+# Getting started
 
-## Functional features
-- Multi-language
-  - [ngx-translate]()
-  - Settings page: select language
-- Push notification w/ OneSignal
-  - [OneSignal: Ionic SDK Setup](https://documentation.onesignal.com/docs/ionic-sdk-setup)
-  - [OneSignal: Web Push: Typical setup](https://documentation.onesignal.com/docs/web-push-typical-setup)
-  - Settings page: toggle push notification
-  - User targeting by tags filtering
-    - [OneSignal: Using Data Tags](https://documentation.onesignal.com/docs/data-tags)
-  - Email messages
-    - [OneSignal:Sending Email Messages](https://documentation.onesignal.com/docs/email-quickstart)
-- Restricted access
-  - [Devdactic: Ionic Auth Guards](https://devdactic.com/ionic-auth-guards/)
-- Forms and validations
-  - [Angular 5 Forms and Validations](https://medium.com/learn-angular/angular-5-forms-and-validations-343a585ecf50)
-- Animations
-  - [Angular.io: Animations](https://angular.io/guide/animations)
-  - [Devdactic: How to Add Ionic Animations Using Angular (2 Different Ways!)](https://devdactic.com/animations-ionic-app/)
-  - [ng4-animations](http://slides.yearofmoo.com/ng4-animations-preview/demo/)
-- Responsive Grid Layout
-  - [Ionic blog: Customizing Ionic Apps for Web & Mobile](https://blog.ionicframework.com/customizing-ionic-apps-for-web-mobile/)
-  - [Ionic blog: Tips & Tricks for Ionic on Desktop](https://blog.ionicframework.com/tips-tricks-for-ionic-on-desktop/)
-  - [Devdactic: Image Gallery With Zoom](https://devdactic.com/ionic-image-gallery-zoom/)
-- PWA
-  - Show toast when new version available
-  - Add to homescreen
-  - Offline support
-- Google Analytics integration
-  - [meumobi: How to use Google Analytics on Ionic PWA and Native app without plugin](http://meumobi.github.io/ionic/pwa/2018/04/12/using-analytics-ionic-app-pwa-native.html)
-- UX/UI
-  - Pull to refresh
-  - Skeleton screens
-    - [Ionic blog: Improved Perceived Performance with Skeleton Screens](https://blog.ionicframework.com/improved-perceived-performance-with-skeleton-screens/)
-
-## Getting started
-
-
-# Starting new app from starter sidemenu with Ionic CLI
-
-```
-$ ionic config set -g features.project-angular true
-
-$ ionic start meu-starter.ionic-v3 sidemenu
-? Project type: ionic-angular
-? Starter template: sidemenu
-? Would you like to integrate your new app with Cordova to target native iOS and Android: Yes
-? Install the free Ionic Pro SDK and connect your app: Yes
+```sh
+$ git clone https://github.com/meumobi/meu-starter.blank.ionic-v3.git [YOUR PROJECT NAME] --depth 1 --no-tags
+$ cd [YOUR PROJECT NAME]
+[YOUR PROJECT NAME]$ npm ci
+[YOUR PROJECT NAME]$ git remote set-url https://github.com/[YOUR ACCOUNT]/[YOUR PROJECT NAME].git
+[YOUR PROJECT NAME]$ git push -u origin master
+[YOUR PROJECT NAME]$ rm CHANGELOG.md
+[YOUR PROJECT NAME]$ npm run release -- --first-release
 ```
 
-# Create a new repository on the command line
+- Signup/Signin on [Travis CI](https://travis-ci.org/) and enable your new repository for Continuous Integration.
+- Signup/Signin on [Greenkeeper]() and enable Greenkeeper access for your new repository from your account page on section 'repo not listed?'
 
-```
-echo "# meu.starter.ionic-v3" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/meumobi/meu.starter.ionic-v3.git
-git push -u origin master
-```
-
-# Connect app to Ionic Pro
-
-Push your code to [Ionic Pro](https://ionicframework.com/pro) to perform real-time updates (skip the app store queue), and more: git push ionic master.
-
-Ionic Pro uses a git-based workflow to manage app updates. If you're not familiar with on working with branches in GitHub you can read about them [here](https://guides.github.com/introduction/flow/).
-
-```
-? Install the free Ionic Pro SDK and connect your app? Yes
-? What would you like to do? Link an existing app on Ionic Pro
-? Which app would you like to link meu-starter
-? Which git host would you like to use? GitHub
-? Does the repository exist on GitHub? Yes
-? Which GitHub repository would you like to link? meumobi / meu.starter.ionic-v3
-? Which would you like to do? Link to master branch only
-```
-
-# ROADMAP
-
-- Continuous integration
-- [Generate Angular project documentation w/ 
-Compodoc](https://compodoc.github.io/compodoc/)
-- [] 
-[Improved Perceived Performance with Skeleton Screens](https://blog.ionicframework.com/improved-perceived-performance-with-skeleton-screens/)
-- InfoBox
-  - [] Create functional app infobox: `ionic start infobox https://github.com/meumobi/meu-starter.ionic-v3`
-  - [] Deploy PWA infobox.app
-  - [] Package app infobox w/ Ionic Pro
-    - [How To Increase Your Teams Efficiency with Ionic Pro](https://devdactic.com/efficiency-ionic-pro/)
-  - [] Submit app infobox to Google Play
-  - [] Submit app infobox to Apple store
-  - [] Deploy live updates w/ Ionic Pro
 
 # Worflow & Build Management
 ## Aliases and environment variables support
@@ -246,13 +143,13 @@ Using Travis, with each push we want to:
 - run unit tests: `npm run lint`
 - lint code: `npm run test:headless`
 - generate build: `npm run build`
-- run e2e tests: `xvfb-run npm run e2e`
+- run e2e (end to end) tests: `xvfb-run npm run e2e`
 
 [Travis CI](travis-ci.org) connects to GitHub repositories out of the box. Navigate to (travis-ci.org) and sign in with your GitHub account. Navigate to your profile and you should see a list of your public repos from GitHub. Enable CI on targeted repo.
 
 It was that simple, the last step for CI is to add a Travis CI configuration file to our project to tell Travis CI how to prepare environment for our app, on which branches to run CI build and which scripts to run on build.
 
-On the root of your app add .travis.yml file and paste snippet below.
+To [speed up CI build we use npm ci and package-lock.json](https://medium.com/@tomastrajan/how-to-speed-up-continuous-integration-build-with-new-npm-ci-and-package-lock-json-7647f91751a).
 
 ### Headless Chrome
 
@@ -260,7 +157,7 @@ As the [official documentation](https://developers.google.com/web/updates/2017/0
 
 > [Headless Chrome](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md) is shipping in Chrome 59. It’s a way to run the Chrome browser in a headless environment. Essentially, running Chrome without chrome! It brings **all modern web platform features** provided by Chromium and the Blink rendering engine to the command line.
 
-#### Caching with npm
+### Caching with npm
 [Caching with npm](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/#Caching-with-npm)
 
 ```yaml
@@ -288,7 +185,7 @@ Thanks to [julie-ng/angular-starter: Setup Travis CI](https://github.com/julie-n
 ## Automated dependency updates
 
 We've selected [Greenkeeper](https://greenkeeper.io/), against [Dependabot](https://dependabot.com/), because it's free for github public project, **inclusive for organization**.
-The integration is pretty straight-forward, only need to signup on [Greenkeeper](https://greenkeeper.io/), give autorization to connect to your github repository and follow instructions.
+The [installation](https://greenkeeper.io/docs.html#installation) is pretty straight-forward, only need to signup on [Greenkeeper](https://greenkeeper.io/), give autorization to connect to your github repository and follow instructions.
 
 - [Continuous everything with Angular, Travis CI, Firebase and Greenkeeper](https://medium.com/@jamzi/continuous-everything-with-angular-travis-ci-firebase-and-greenkeeper-6656543bd826)
 
