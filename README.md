@@ -29,17 +29,21 @@ A starter template for PWA and Native Ionic v3 projects, providing worflow & bui
 # Getting started
 
 ```sh
-$ git clone https://github.com/meumobi/meu-starter.blank.ionic-v3.git [YOUR PROJECT NAME] --depth 1 --no-tags
+$ git clone https://github.com/meumobi/meu-starter.blank.ionic-v3.git [YOUR PROJECT NAME]
 $ cd [YOUR PROJECT NAME]
-[YOUR PROJECT NAME]$ npm ci
-[YOUR PROJECT NAME]$ git remote set-url https://github.com/[YOUR ACCOUNT]/[YOUR PROJECT NAME].git
-[YOUR PROJECT NAME]$ git push -u origin master
 [YOUR PROJECT NAME]$ rm CHANGELOG.md
+[YOUR PROJECT NAME]$ git init
+[YOUR PROJECT NAME]$ git add .
+[YOUR PROJECT NAME]$ git commit -m "first commit"
+[YOUR PROJECT NAME]$ git remote add origin ttps://github.com/[YOUR ACCOUNT]/[YOUR PROJECT NAME].git
+[YOUR PROJECT NAME]$ git push -u origin master
 [YOUR PROJECT NAME]$ npm run release -- --first-release
+[YOUR PROJECT NAME]$ npm ci
+[YOUR PROJECT NAME]$ ionic serve
 ```
 
 - Signup/Signin on [Travis CI](https://travis-ci.org/) and enable your new repository for Continuous Integration.
-- Signup/Signin on [Greenkeeper]() and enable Greenkeeper access for your new repository from your account page on section 'repo not listed?'
+- Signup/Signin on [Greenkeeper](https://greenkeeper.io/) and enable Greenkeeper access for your new repository from your account page on section 'repo not listed?'
 
 
 # Worflow & Build Management
@@ -197,7 +201,7 @@ The commit contains the following structural elements, to communicate intent to 
 - **fix**: a commit of the `type fix` patches a bug in your codebase (this correlates with [PATCH](https://semver.org/#summary) in semantic versioning).
 - **feat**: a commit of the `type feat` introduces a new feature to the codebase (this correlates with [MINOR](https://semver.org/#summary) in semantic versioning).
 - **BREAKING CHANGE**: a commit that has the text `BREAKING CHANGE`: at the beginning of its optional body or footer section introduces a breaking API change (correlating with [MAJOR](https://semver.org/#summary) in semantic versioning). A breaking change can be part of commits of any type. e.g., a fix:, feat: & chore: types would all be valid, in addition to any other type.
-- Others: commit types other than fix: and feat: are allowed, for example commitlint-config-conventional (based on the the Angular convention) recommends chore:, docs:, style:, refactor:, perf:, test:, and others. We also recommend improvement for commits that improve a current implementation without adding a new feature or fixing a bug. Notice these types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE, which is NOT recommended). 
+- Others: commit types other than fix: and feat: are allowed, for example commitlint-config-conventional (based on the the [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) recommends chore:, docs:, style:, refactor:, perf:, test:, and others. We also recommend improvement for commits that improve a current implementation without adding a new feature or fixing a bug. Notice these types are not mandated by the conventional commits specification, and have no implicit effect in semantic versioning (unless they include a BREAKING CHANGE, which is NOT recommended). 
 
 # Inspiration
 
