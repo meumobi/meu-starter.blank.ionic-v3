@@ -54,7 +54,7 @@
     "connect": "^3.6.6",
     "html-loader": "^0.5.5",
     "istanbul-instrumenter-loader": "^3.0.1",
-    "jasmine": "^3.1.0",
+    "jasmine": "^3.3.1",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^2.0.2",
     "karma-chrome-launcher": "^2.2.0",
