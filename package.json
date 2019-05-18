@@ -51,7 +51,7 @@
     "@types/jasmine": "^2.8.7",
     "@types/node": "^10.0.7",
     "angular2-template-loader": "^0.6.2",
-    "connect": "^3.6.6",
+    "connect": "^3.7.0",
     "html-loader": "^0.5.5",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine": "^3.1.0",
